@@ -1,0 +1,61 @@
+.search-container {
+    width: 60%;
+    margin-top: 1rem;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+/* .search-container input{
+    width: 50%;
+margin-left: 15rem;
+} */
+.search-header h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.search-header{
+    color: #81AFDD;
+    padding: 1rem;
+    font-weight: 600;
+}
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2rem ;
+    font-size: 16px;
+}
+
+.suggestions-list {
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.file-details, .file-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.file-card {
+    margin-bottom: 10px;
+}
