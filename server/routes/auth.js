@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 const upload  =require("../middleware/fileUpload.js");
 const Post =require("../models/post.js");
 dotenv.config();
-
+const { likePost } = require('../controllers/postcontroller.js');
 
 // Configure nodemailer
 const transporter = nodemailer.createTransport({
@@ -338,7 +338,10 @@ router.put("/like-post/:id", authenticateToken, async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: "Failed to like/unlike post" });
   }
-});
+}); 
+
+
+
 
 
 router.get("/blog-posts", async (req, res) => {
@@ -358,7 +361,7 @@ router.put("/comment-post/:id", authenticateToken, async (req, res) => {
     if (!post) {
       return res.status(404).json({ message: "Post not found" });
     }
-
+    
     const comment = {
       text: req.body.text,
       createdAt: Date.now(),

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar/Navbar';
-
+import './upload.css';
 const BlogPostForm = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -52,25 +52,36 @@ const BlogPostForm = () => {
       <Navbar />
       <div className="form-container">
         <form onSubmit={handleSubmit} className="login-form">
+        <div className="form-group">
+        <label htmlFor="title">Title</label>
           <input
+          name='title'
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
             required
           />
+          </div>
+          <div className="form-group">
+          <label htmlFor="description">Description</label>
           <textarea
+          name='description'
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Description"
             required
-          />
+          /></div>
+          <div className="form-group">
+          <label htmlFor="img">Image</label>
           <input
+          name='img'
             type="file"
             onChange={(e) => setImage(e.target.files[0])}
             required
-          />
-          <button type="submit" disabled={loading}>
+          /></div>
+          <br />
+          <button type="submit" disabled={loading}  className="submit-button">
             {loading ? 'Uploading...' : 'Upload Post'}
           </button>
         </form>

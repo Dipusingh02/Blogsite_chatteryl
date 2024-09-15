@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const dotenv = require('dotenv');
-const cors = require('cors'); // Correctly require cors
-const authRoutes = require('./routes/auth'); // Correctly require your routes
+const cors = require('cors'); 
+const authRoutes = require('./routes/auth'); 
 const app = express();
 
 // Load environment variables from .env file
@@ -12,10 +12,11 @@ app.use('/uploads', express.static('uploads'));
 // Middleware setup
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', // Assuming this is where your frontend runs
-    methods: ['GET', 'POST'],
+    origin: 'http://localhost:5173', 
+    methods: ['GET', 'POST','PUT','DELETE'],
     credentials: true
 }));
+app.options('*', cors());
 app.use('/', authRoutes); // Use the routes
 
 // Get port and database connection string from environment variables

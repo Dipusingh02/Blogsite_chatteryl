@@ -65,7 +65,7 @@ return (
 </span>
 {isDropdownOpen && (
 <ul className="dropdown-menu">
-<li><Link to="/Upload-blog">Upload Paper</Link></li>
+<li><Link to="/Upload-blog">Upload Blog</Link></li>
 <li><Link to="/Myblog">Library</Link></li>
 <li onClick={handleLogout}>Logout</li>
 </ul>
