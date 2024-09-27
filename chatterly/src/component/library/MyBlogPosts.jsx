@@ -11,7 +11,7 @@ const MyBlogPosts = () => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:8081/my-blog-posts', {
+        const response = await axios.get('https://blogsite-chatteryl.onrender.com/my-blog-posts', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -37,7 +37,7 @@ const MyBlogPosts = () => {
           {posts.length > 0 ? (
             posts.map((post) => (
               <div key={post._id} className="blog-post-card">
-              <img src={`http://localhost:8081/uploads/${post.image}`} alt="Post Image" />
+              <img src={`https://blogsite-chatteryl.onrender.com/uploads/${post.image}`} alt="Post Image" />
  
               <h2>{post.title}</h2>
                 <p>{post.description}</p>

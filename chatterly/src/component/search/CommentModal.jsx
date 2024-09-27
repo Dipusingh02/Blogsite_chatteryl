@@ -8,7 +8,7 @@ const CommentModal = ({ postId, comments }) => {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await axios.get(`http://localhost:8081/comments/${postId}`);
+        const response = await axios.get(`https://blogsite-chatteryl.onrender.com/comments/${postId}`);
         setCommentCount(response.data.comments.length);
       } catch (error) {
         console.error("Error fetching comments:", error);
@@ -19,7 +19,7 @@ const CommentModal = ({ postId, comments }) => {
 
   const handleComment = async () => {
     try {
-      const response = await axios.post(`http://localhost:8081/comment-post/${postId}`, {
+      const response = await axios.post(`https://blogsite-chatteryl.onrender.com/comment-post/${postId}`, {
         text: commentText,
       });
       setCommentCount(response.data.comments.length);

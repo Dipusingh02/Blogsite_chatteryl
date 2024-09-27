@@ -26,7 +26,7 @@ const FileContainer = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:8081/like-post/${id}`,
+        `https://blogsite-chatteryl.onrender.com/like-post/${id}`,
         {},
         {
           headers: {
@@ -60,7 +60,7 @@ const FileContainer = () => {
       {posts.length > 0 ? (
         posts.map((post) => (
           <div key={post._id} className="blog-post-card">
-            <img src={`http://localhost:8081/uploads/${post.image}`} alt="Post Image" />
+            <img src={`https://blogsite-chatteryl.onrender.com/uploads/${post.image}`} alt="Post Image" />
             <h2>{post.title}</h2>
             <p>{post.description}</p>
             <div className="blog-post-actions">

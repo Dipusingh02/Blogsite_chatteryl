@@ -8,7 +8,7 @@ const LikeModal = ({ postId, likes }) => {
   useEffect(() => {
     const fetchLikes = async () => {
       try {
-        const response = await axios.get(`http://localhost:8081/likes/${postId}`);
+        const response = await axios.get(`https://blogsite-chatteryl.onrender.com/likes/${postId}`);
         setLikeCount(response.data.likes);
       } catch (error) {
         console.error("Error fetching likes:", error);
@@ -19,7 +19,7 @@ const LikeModal = ({ postId, likes }) => {
 
   const handleLike = async () => {
     try {
-      const response = await axios.put(`http://localhost:8081/like-post/${postId}`);
+      const response = await axios.put(`https://blogsite-chatteryl.onrender.com/like-post/${postId}`);
       setLikeCount(response.data.likes);
       setHasLiked(true);
     } catch (error) {
@@ -29,7 +29,7 @@ const LikeModal = ({ postId, likes }) => {
 
   const handleUnlike = async () => {
     try {
-      const response = await axios.put(`http://localhost:8081/unlike-post/${postId}`);
+      const response = await axios.put(`https://blogsite-chatteryl.onrender.com/unlike-post/${postId}`);
       setLikeCount(response.data.likes);
       setHasLiked(false);
     } catch (error) {
