@@ -297,10 +297,6 @@ router.post("/upload-post", authenticateToken, upload.single("image"), async (re
 //   }
 // });
 
-
-
-
-
 // router.post("/upload-post", async (req, res) => {
 //   try {
 //     const { title, description } = req.body;
