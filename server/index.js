@@ -12,7 +12,7 @@ app.use('/uploads', express.static('uploads'));
 // Middleware setup
 app.use(express.json());
 app.use(cors({
-    origin: 'https://dipublog.netlify.app/', 
+    origin: 'https://dipublog.netlify.app', 
     methods: ['GET', 'POST','PUT','DELETE'],
     credentials: true
 }));
