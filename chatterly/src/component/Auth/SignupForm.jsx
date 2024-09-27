@@ -29,7 +29,7 @@ const SignupForm = () => {
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
     try {
       localStorage.setItem("userData", JSON.stringify(values));
-      const response = await axios.post("http://localhost:8081/signup", {
+      const response = await axios.post("https://blogsite-chatteryl.onrender.com/signup", {
         name: values.name,
         email: values.email,
         password: values.password,

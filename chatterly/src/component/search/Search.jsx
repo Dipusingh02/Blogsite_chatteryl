@@ -11,7 +11,7 @@ const FileContainer = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get(`http://localhost:8081/blog-posts`);
+        const response = await axios.get(`https://blogsite-chatteryl.onrender.com/blog-posts`);
         setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
       } catch (error) {
         console.error("Error fetching posts:", error);
