@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Create-image{
+    background-image: url('../../assets/connect.jpg');
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Create-button__space{
+    width: 1rem;
+}
+
+.Create-image__content{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.Create-button{
+    padding: 1rem 4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.Create-button:hover{
+    transition: 0.3s ease-out;
+    color: white;
+    background-color: transparent;
+}
+
+.Create-image > h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.375rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Create-image > p {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.create-info__section{
+    background-image: url('../../assets/adam.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}   
+
+.create-info__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-info__section > h1 {
+    color: white;
+    font-size: 11rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.create-info__cards{
+    background-image: url('../../assets/david.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+.create-info__cards > h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.375rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.create-info__container > div > h3 {  
+    color: white; 
+    width: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Learn-button{
+    padding: 1rem 4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.Learn-button:hover{
+    transition: 0.3s ease-out;
+    color: white;
+    background-color: transparent;
+}
+
+.create-info__container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 4rem;
+}
+
+.card-content{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 0.7rem;
+    width: 10rem;
+    font-style: normal;
+}
+
+hr{
+    outline: none;
+    border: none;
+    background: rgb(136,0,255);
+    background: linear-gradient(90deg, rgba(136,0,255,1) 0%, rgba(168,29,253,1) 14%, rgba(230,18,225,1) 51%, rgba(252,250,69,0.9023984593837535) 100%);
+    height: 0.15rem;
+    width: 5rem;
+}
+
+.div-images{
+    position: sticky;
+    top: 0;
+}
+
+.create-card__button-alignment{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-button{
+    padding: 1rem 4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.register-button:hover{
+    transition: 0.3s ease-out;
+    color: white;
+    background-color: transparent;
+}
