@@ -7,7 +7,7 @@ import Footer from "../footer/Footer";
 const Home = () => {
   return (
     <div className="chatterly-home">
-      {/* <Navbar /> */}
+       <Navbar /> 
       <div className="custom-bg">
         <br />
         <Search />

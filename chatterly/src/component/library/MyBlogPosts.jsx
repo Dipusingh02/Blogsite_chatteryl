@@ -38,9 +38,9 @@ const MyBlogPosts = () => {
             posts.map((post) => (
               <div key={post._id} className="blog-post-card">
               <img src={`https://blogsite-chatteryl.onrender.com/uploads/${post.image}`} alt="Post Image" />
- 
-              <h2>{post.title}</h2>
-                <p>{post.description}</p>
+              <center><h2>{post.title}</h2></center>
+              <br /> 
+              <p>{post.description}</p>
                 <span> <h5>Post On   {new Date(post.createdAt).toLocaleDateString()}</h5></span>
                 </div>
             ))
