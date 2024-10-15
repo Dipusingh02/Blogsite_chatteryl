@@ -11,12 +11,22 @@ dotenv.config();
 app.use('/uploads', express.static('uploads'));
 // Middleware setup
 app.use(express.json());
+<<<<<<< HEAD
 app.use(cors({
     origin: 'https://dipublog.netlify.app', 
     methods: ['GET', 'POST','PUT','DELETE'],
     credentials: true
 }));
 app.options('*', cors());
+=======
+// app.use(cors({
+//     origin: 'https://dipublog.netlify.app', 
+//     methods: ['GET', 'POST','PUT','DELETE'],
+//     credentials: true
+// }));
+// app.options('*', cors());
+app.use(cors());
+>>>>>>> teammate/main
 app.use('/', authRoutes); // Use the routes
 
 // Get port and database connection string from environment variables

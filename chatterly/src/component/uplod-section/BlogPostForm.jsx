@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar/Navbar';
 import './upload.css';
+<<<<<<< HEAD
+=======
+
+>>>>>>> teammate/main
 const BlogPostForm = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -30,7 +34,11 @@ const BlogPostForm = () => {
           'Content-Type': 'multipart/form-data',
         },
       };
+<<<<<<< HEAD
       const response = await axios.post('https://blogsite-chatteryl.onrender.com/upload-post', formData, config);
+=======
+      const response = await axios.post('http://localhost:8081/upload-post', formData, config);
+>>>>>>> teammate/main
       console.log('Response:', response);
 
       if (response.status === 201) {
@@ -48,8 +56,13 @@ const BlogPostForm = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div>
       <Navbar />
+=======
+    <div className='BlogForm-background'>
+      {/* <Navbar /> */}
+>>>>>>> teammate/main
       <div className="form-container">
         <form onSubmit={handleSubmit} className="login-form">
         <div className="form-group">
@@ -59,7 +72,10 @@ const BlogPostForm = () => {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+<<<<<<< HEAD
             placeholder="Title"
+=======
+>>>>>>> teammate/main
             required
           />
           </div>
@@ -69,7 +85,10 @@ const BlogPostForm = () => {
           name='description'
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+<<<<<<< HEAD
             placeholder="Description"
+=======
+>>>>>>> teammate/main
             required
           /></div>
           <div className="form-group">

@@ -13,6 +13,7 @@ const SignupSchema = Yup.object().shape({
     .email("Invalid email address")
     .min(2, "Too Short!")
     .max(50, "Too Long!")
+<<<<<<< HEAD
     .required("Required"),
   name: Yup.string()
     .min(2, "Too Short!")
@@ -21,6 +22,16 @@ const SignupSchema = Yup.object().shape({
   password: Yup.string()
     .min(8, "Password must be at least 8 characters")
     .required("Required"),
+=======
+    .required("*Required"),
+  name: Yup.string()
+    .min(2, "Too Short!")
+    .max(50, "Too Long!")
+    .required("*Required"),
+  password: Yup.string()
+    .min(8, "Password must be at least 8 characters")
+    .required("*Required"),
+>>>>>>> teammate/main
 });
 
 const SignupForm = () => {
@@ -29,7 +40,11 @@ const SignupForm = () => {
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
     try {
       localStorage.setItem("userData", JSON.stringify(values));
+<<<<<<< HEAD
       const response = await axios.post("https://blogsite-chatteryl.onrender.com/signup", {
+=======
+      const response = await axios.post("http://localhost:8081/signup", {
+>>>>>>> teammate/main
         name: values.name,
         email: values.email,
         password: values.password,
@@ -51,8 +66,13 @@ const SignupForm = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div>
       <Navbar />
+=======
+    <div className="SignUp-body">
+      {/* <Navbar /> */}
+>>>>>>> teammate/main
       <div className="gradient__bg">
       <div id="mtl">
       <div className="form-container">
@@ -116,7 +136,11 @@ const SignupForm = () => {
       </div>
       </div>
       </div>
+<<<<<<< HEAD
       <Footer />
+=======
+      {/* <Footer /> */}
+>>>>>>> teammate/main
     </div>
   );
 };

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+>>>>>>> teammate/main
 .file-container {
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +31,10 @@
   }
   
   .file-card h3 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> teammate/main
     margin: 0 0 8px;
     background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     background-clip: text;
@@ -40,9 +50,13 @@
     display: block;
     margin: 8px 0;
     color: blue;
+<<<<<<< HEAD
     text-decoration: none;
    
     
+=======
+    text-decoration: none;   
+>>>>>>> teammate/main
   }
   
   .file-card div span {
@@ -50,21 +64,44 @@
   }
   .blog-posts-container {
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap;
     justify-content: center;
+=======
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+>>>>>>> teammate/main
     gap: 20px;
   }
   
   .blog-post-card {
+<<<<<<< HEAD
     width: 300px;
     background-color:#103a64;
     border: 1px solid #ddd;
+=======
+    width: 50rem;
+    /* background-color:#103a64; */
+    background-image: url('../../assets/homebg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+>>>>>>> teammate/main
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .blog-post-card h2{
+<<<<<<< HEAD
     color: rgb(14, 137, 137);
+=======
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+>>>>>>> teammate/main
   }
   .blog-post-card img {
     width: 100%;
@@ -79,8 +116,17 @@
   }
   
   .blog-post-card p {
+<<<<<<< HEAD
     font-size: 14px;
     color: #666;
+=======
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #ccc;
+>>>>>>> teammate/main
   }
   
   .blog-post-actions {
@@ -90,12 +136,32 @@
   }
   
   .blog-post-actions button {
+<<<<<<< HEAD
     background-color: #4CAF50;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 14px;
     cursor: pointer;
+=======
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.6);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+
+  .blog-post-actions button:hover{
+    transition: 0.3s ease-out;
+    color: white;
+    background-color: transparent;
+>>>>>>> teammate/main
   }
   
   .blog-post-author {

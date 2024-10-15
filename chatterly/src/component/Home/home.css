@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@200;300&display=swap');
+<<<<<<< HEAD
 .bgcolor{
      background: rgb(13,13,102);
     
@@ -8,3 +9,19 @@
 #wh{
     height: auto;
 }
+=======
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+.custom-bg{
+    background-color: black;
+}
+
+/* #wh{
+    height: auto;
+} */
+>>>>>>> teammate/main

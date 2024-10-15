@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Blogsite_chatteryl
 Blogsite Chatteryl is a feature-rich platform where users can register, create, and share their blogs with the community. It allows users to like and comment on blog posts, fostering an interactive blogging environment.
+=======
+# Blogsite-chatterly
+Blogsite Chatterly is a feature-rich platform where users can register, create, and share their blogs with the community. It allows users to like and comment on blog posts, fostering an interactive blogging environment.
+>>>>>>> teammate/main
 
 Features
 User Registration and Authentication: Users can create accounts and securely log in to access the platform.

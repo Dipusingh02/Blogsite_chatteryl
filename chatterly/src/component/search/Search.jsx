@@ -5,16 +5,30 @@ import "./fc.css";
 import { FaHeart, FaComment } from 'react-icons/fa';
 
 const FileContainer = () => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> teammate/main
   const [posts, setPosts] = useState([]); 
   const [likes, setLikes] = useState(0);
   
   useEffect(() => {
+<<<<<<< HEAD
     const fetchPosts = async () => {
       try {
         const response = await axios.get(`https://blogsite-chatteryl.onrender.com/blog-posts`);
         setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
       } catch (error) {
         console.error("Error fetching posts:", error);
+=======
+
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get(`http://localhost:8081/blog-posts`);
+        setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
+      } catch (error) {
+        console.error("Error fetching posts : ", error);
+>>>>>>> teammate/main
         setPosts([]); // Set to empty array on error to avoid undefined issues
       }
     };
@@ -26,7 +40,11 @@ const FileContainer = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
+<<<<<<< HEAD
         `https://blogsite-chatteryl.onrender.com/like-post/${id}`,
+=======
+        `http://localhost:8081/like-post/${id}`,
+>>>>>>> teammate/main
         {},
         {
           headers: {
@@ -60,8 +78,14 @@ const FileContainer = () => {
       {posts.length > 0 ? (
         posts.map((post) => (
           <div key={post._id} className="blog-post-card">
+<<<<<<< HEAD
             <img src={`https://blogsite-chatteryl.onrender.com/uploads/${post.image}`} alt="Post Image" />
             <h2>{post.title}</h2>
+=======
+            <img src={`http://localhost:8081/uploads/${post.image}`} alt="Post Image" />
+            <center><h2>{post.title}</h2></center>
+            <br /> 
+>>>>>>> teammate/main
             <p>{post.description}</p>
             <div className="blog-post-actions">
               <button onClick={() => {
@@ -72,7 +96,11 @@ const FileContainer = () => {
                   setLikes(0);
                 }
               }}>
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> teammate/main
             Like <FaHeart /> {likes}
               </button>
               <button onClick={() => handleComment(post._id)}> Comment <FaComment/></button>
@@ -92,6 +120,10 @@ const FileContainer = () => {
       )}
     </div>
   );
+<<<<<<< HEAD
+=======
+  
+>>>>>>> teammate/main
 };
 
 export default FileContainer;
