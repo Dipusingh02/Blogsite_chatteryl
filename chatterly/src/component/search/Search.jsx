@@ -5,22 +5,10 @@ import "./fc.css";
 import { FaHeart, FaComment } from 'react-icons/fa';
 
 const FileContainer = () => {
-<<<<<<< HEAD
-=======
-
->>>>>>> teammate/main
   const [posts, setPosts] = useState([]); 
   const [likes, setLikes] = useState(0);
   
   useEffect(() => {
-<<<<<<< HEAD
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get(`https://blogsite-chatteryl.onrender.com/blog-posts`);
-        setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-=======
 
     const fetchPosts = async () => {
       try {
@@ -28,7 +16,6 @@ const FileContainer = () => {
         setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
       } catch (error) {
         console.error("Error fetching posts : ", error);
->>>>>>> teammate/main
         setPosts([]); // Set to empty array on error to avoid undefined issues
       }
     };

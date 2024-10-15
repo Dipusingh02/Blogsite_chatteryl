@@ -17,27 +17,16 @@ const LoginForm = () => {
   };
 
   const validationSchema = Yup.object({
-<<<<<<< HEAD
-    email: Yup.string().email("Invalid email address").required("Required"),
-    password: Yup.string()
-      .min(6, "Password must be at least 6 characters")
-      .required("Required"),
-=======
     email: Yup.string().email("Invalid email address").required("*Required"),
     password: Yup.string()
       .min(6, "Password must be at least 6 characters")
       .required("*Required"),
->>>>>>> teammate/main
   });
 
   const onSubmit = async (values, { setSubmitting, setFieldError }) => {
     console.log("Form values:", values);
     try {
-<<<<<<< HEAD
-      const response = await axios.post("https://blogsite-chatteryl.onrender.com/login", values);
-=======
       const response = await axios.post("http://localhost:8081/login", values);
->>>>>>> teammate/main
       console.log("Server response", response.data);
       if (response.data.userId) {
         const token = response.data.token;
@@ -62,13 +51,8 @@ const LoginForm = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div>
-    <Navbar />
-=======
     <div className="login-page__design">
     {/* <Navbar /> */}
->>>>>>> teammate/main
     <div className="gradient__bg" >
     <Formik
       initialValues={initialValues}
@@ -115,11 +99,7 @@ const LoginForm = () => {
       )}
     </Formik>
     </div>
-<<<<<<< HEAD
-    <Footer />
-=======
     {/* <Footer /> */}
->>>>>>> teammate/main
     </div>
   );
 };

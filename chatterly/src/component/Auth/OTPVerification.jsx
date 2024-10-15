@@ -63,44 +63,6 @@ const OTPVerification = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="form-container">
-      <h2>Verify OTP</h2>
-      <Formik
-        initialValues={{ otp: "" }}
-        validationSchema={OTPVerificationSchema}
-        onSubmit={handleSubmit}
-      >
-        {({ isSubmitting }) => (
-          <Form className="login-form">
-            <div className="form-group">
-              <label htmlFor="otp">OTP</label>
-              <Field type="text" name="otp" className="form-field" />
-              <ErrorMessage
-                name="otp"
-                component="div"
-                className="error-message"
-              />
-            </div>
-            {error && <div className="error-message">{error}</div>}
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="submit-button"
-            >
-              Verify OTP
-            </button>
-            <button
-              type="button"
-              onClick={handleResendOTP}
-              className="submit-button"
-            >
-              Resend OTP
-            </button>
-          </Form>
-        )}
-      </Formik>
-=======
     <div className="background-verify">
       <div className="form-container">
         <h2>Verify OTP</h2>
@@ -140,7 +102,6 @@ const OTPVerification = () => {
           )}
         </Formik>
       </div>
->>>>>>> teammate/main
     </div>
   );
 };
