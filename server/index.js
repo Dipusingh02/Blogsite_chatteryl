@@ -11,12 +11,12 @@ dotenv.config();
 app.use('/uploads', express.static('uploads'));
 // Middleware setup
 app.use(express.json());
-// app.use(cors({
-//     origin: 'https://dipublog.netlify.app', 
-//     methods: ['GET', 'POST','PUT','DELETE'],
-//     credentials: true
-// }));
-// app.options('*', cors());
+app.use(cors({
+    origin: 'https://dipublog.netlify.app', 
+    methods: ['GET', 'POST','PUT','DELETE'],
+    credentials: true
+}));
+app.options('*', cors());
 app.use(cors());
 app.use('/', authRoutes); // Use the routes
 

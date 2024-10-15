@@ -26,7 +26,7 @@ const LoginForm = () => {
   const onSubmit = async (values, { setSubmitting, setFieldError }) => {
     console.log("Form values:", values);
     try {
-      const response = await axios.post("http://localhost:8081/login", values);
+      const response = await axios.post("https://blogsite-chatteryl.onrender.com/login", values);
       console.log("Server response", response.data);
       if (response.data.userId) {
         const token = response.data.token;

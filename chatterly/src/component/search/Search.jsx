@@ -12,7 +12,7 @@ const FileContainer = () => {
 
     const fetchPosts = async () => {
       try {
-        const response = await axios.get(`http://localhost:8081/blog-posts`);
+        const response = await axios.get(`https://blogsite-chatteryl.onrender.com/blog-posts`);
         setPosts(response.data || []); // Ensure response.data is an array, or fallback to an empty array
       } catch (error) {
         console.error("Error fetching posts : ", error);
@@ -27,7 +27,7 @@ const FileContainer = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:8081/like-post/${id}`,
+        `https://blogsite-chatteryl.onrender.com/like-post/${id}`,
         {},
         {
           headers: {
@@ -61,7 +61,7 @@ const FileContainer = () => {
       {posts.length > 0 ? (
         posts.map((post) => (
           <div key={post._id} className="blog-post-card">
-            <img src={`http://localhost:8081/uploads/${post.image}`} alt="Post Image" />
+            <img src={`https://blogsite-chatteryl.onrender.com/uploads/${post.image}`} alt="Post Image" />
             <center><h2>{post.title}</h2></center>
             <br /> 
             <p>{post.description}</p>

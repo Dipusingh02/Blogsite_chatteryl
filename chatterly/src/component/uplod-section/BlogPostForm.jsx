@@ -30,7 +30,7 @@ const BlogPostForm = () => {
           'Content-Type': 'multipart/form-data',
         },
       };
-      const response = await axios.post('http://localhost:8081/upload-post', formData, config);
+      const response = await axios.post('https://blogsite-chatteryl.onrender.com/upload-post', formData, config);
       console.log('Response:', response);
 
       if (response.status === 201) {
